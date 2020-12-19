@@ -1,10 +1,14 @@
 // Assignment Code
+// Clear the console on every refresh
+console.clear();
 
 
 // I want to create a password generator for 8-128 characters with selection -->
     
 //     Get input to select if uppercase, numbers, special characters will be used -->
-var characters = {
+function myFunction () {
+  var password = [];
+  var characters = {
   "lowerCase": [
     "a",
     "b",
@@ -64,7 +68,7 @@ var characters = {
   "Y",
   "Z",
   ],
-  "arabicNum": [
+  "number": [
   "0",
   "1",
   "2",
@@ -76,7 +80,7 @@ var characters = {
   "8",
   "9",
   ],
-  "specialCharacter": [
+  "symbol": [
     " ",
     "!",
     "#",
@@ -96,7 +100,9 @@ var characters = {
     ";",
     "<",
     ">",
+    "'",
     "=",
+    '"',
     "?",
     "@",
     "[",
@@ -108,6 +114,9 @@ var characters = {
     "|",
     "~",
   ],
+};
+var children = password.concat(specialCharacter)
+document.getElementById("").innerHTML = children;
 }
 
 
@@ -115,11 +124,8 @@ var characters = {
 //     Get input for length of password string
 
 //     function with arrays for character selection
-var newPassword = {
-  "selectedVar": [
-    
-  ]
-}
+
+
 //     selected characters combined into one array
 
 //     math.random same length of string output.
@@ -127,6 +133,11 @@ var newPassword = {
 //    correlate math.random with possible characters 
 
 //     output to text area (line 21)
+
+const uppercaseEl = document.getElementById("upperCase");
+const lowercaseEl = document.getElementById("lowerCase");
+const numberEl = document.getElementById("number");
+const symbolEl = document.getElementById("symbol");
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -140,3 +151,14 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+{
+	const length = +lengthEl.value;
+	const hasLower = lowercaseEl.checked;
+	const hasUpper = uppercaseEl.checked;
+	const hasNumber = numberEl.checked;
+	const hasSymbol = symbolEl.checked;
+	generatedPassword = true;
+  resultEl.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
+}
+
+
