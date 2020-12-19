@@ -2,7 +2,10 @@
 // Clear the console on every refresh
 console.clear();
 var length = prompt("Select desired character count between 8 and 128")
-  if length > 128 || < 8
+  if ((length > 128) ||
+  (length < 8)) {
+    alert("Please enter a value between 8 and 128");
+  }
 
 
 // I want to create a password generator for 8-128 characters with selection -->
