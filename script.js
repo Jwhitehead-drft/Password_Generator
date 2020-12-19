@@ -1,10 +1,12 @@
 // Assignment Code
 // Clear the console on every refresh
 console.clear();
+var length = prompt("Select desired character count between 8 and 128")
+  if length > 128 || < 8
 
 
 // I want to create a password generator for 8-128 characters with selection -->
-    
+     
 //     Get input to select if uppercase, numbers, special characters will be used -->
 function myFunction () {
   var password = [];
