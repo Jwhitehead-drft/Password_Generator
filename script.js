@@ -133,7 +133,7 @@ document.getElementById("").innerHTML = children;
 //    correlate math.random with possible characters 
 
 //     output to text area (line 21)
-
+//    DOM output for selected variables
 const uppercaseEl = document.getElementById("upperCase");
 const lowercaseEl = document.getElementById("lowerCase");
 const numberEl = document.getElementById("number");
