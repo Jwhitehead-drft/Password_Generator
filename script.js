@@ -133,11 +133,13 @@ var symbol = false
 var randomIndex = 0
 
  // creates prompt for input and subsequent alerts for options
+ // ask for count
   var length = prompt("Select desired character count between 8 and 128")
   length=parseInt(length)
   if ((length > 128) ||
     (length < 8)) {
     alert("Please enter a value between 8 and 128");
+  generatePassword()
   } else {
     lowerCase = confirm("Use lower case?");
     upperCase = confirm("Use upper case?");
