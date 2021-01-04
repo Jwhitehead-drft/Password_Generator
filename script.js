@@ -156,7 +156,7 @@ var randomIndex = 0
       randomIndex = Math.floor(Math.random()* characters.lowerCase.length)
       password = password + characters.lowerCase[randomIndex]
       i = password.length
-      if (i === length)
+      if (i === length) 
       {
         return password
       }
